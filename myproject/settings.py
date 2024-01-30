@@ -116,7 +116,7 @@ DATABASES = {
         'OPTIONS': {
             'timeout': 30,
             # Disable deterministic ordering
-            'order_with_respect_to': None,
+            'deterministic': False,
         },
     }
 }
