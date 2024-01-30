@@ -113,6 +113,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'OPTIONS': {
+            'timeout': 30,
+            # Disable deterministic ordering
+            'order_with_respect_to': None,
+        },
     }
 }
 
