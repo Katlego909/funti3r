@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2j$u(xg@eje5sx9n23s31u(mtxn2k07+fs+iw*baecl&m)l&gq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Configure email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -113,11 +113,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-        # 'OPTIONS': {
-        #     'timeout': 30,
-        #     # Disable deterministic ordering
-        #     'deterministic': False,
-        # },
     }
 }
 
